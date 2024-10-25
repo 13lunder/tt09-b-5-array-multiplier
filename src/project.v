@@ -16,9 +16,9 @@ module tt_um_b_0_array_multiplier (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-    input [3:0] m,q,
-    output [7:0] p
-    );
+    wire [3:0] m = ui_in[3:0];
+    wire [3:0] q = ui_in[7:4];
+    wire [7:0] p;
     
     wire [3:0] partial[3:0];
     wire [4:0] sum1, sum2, sum3;
