@@ -24,10 +24,22 @@ module tt_um_b_0_array_multiplier (
     wire [4:0] sum1, sum2, sum3;
     wire [3:0] c1, c2, c3, c4;
     
-    assign partial[0] = m & q[0];
-    assign partial[1] = m & q[1];
-    assign partial[2] = m & q[2];
-    assign partial[3] = m & q[3];
+    assign partial[0][0] = m[0] & q[0];
+    assign partial[0][1] = m[1] & q[0];
+    assign partial[0][2] = m[2] & q[0];
+    assign partial[0][3] = m[3] & q[0];
+    assign partial[1][0] = m[0] & q[1];
+    assign partial[1][1] = m[1] & q[1];
+    assign partial[1][2] = m[2] & q[1];
+    assign partial[1][3] = m[3] & q[1];
+    assign partial[2][0] = m[0] & q[2];
+    assign partial[2][1] = m[1] & q[2];
+    assign partial[2][2] = m[2] & q[2];
+    assign partial[2][3] = m[3] & q[2];
+    assign partial[3][0] = m[0] & q[3];
+    assign partial[3][1] = m[1] & q[3];
+    assign partial[3][2] = m[2] & q[3];
+    assign partial[3][3] = m[3] & q[3];
     
     fulladder inst1_1(partial[0][1], partial[1][0], 1'b0, sum1[0], c1[0]);
     fulladder inst1_2(partial[0][2], partial[1][1], c1[0], sum1[1], c1[1]);
