@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This project creates a 4x4 array multiplier using structural design in Verilog.
+A 4x4 array multiplier takes in two 4-bit binary numbers, m and q, and creates partial products by multiplying each bit of q with every bit of m, resulting in a total of four partial products. These partial products are added together using a full adder module to create the final product.
 
 ## How to test
 
-The inputs of the multiplier are denoted m and q.
+5 test cases are included in this project. In each test case, 4-bit binary numbers are assigned to m and q, and their expected product is listed. If the result from the array multiplier matches the expected output, then that test case is considered a success. Multiple test cases are included to ensure functionality.
 
 ## External hardware
 
