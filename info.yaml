@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "Lab B Tiny Tapeout Lab"      # Project title
+  title:        "4x4 Array Multiplier"      # Project title
   author:       "Austin Lin"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Creates 4x4 structural array multiplier"      # One line description of what your project does
